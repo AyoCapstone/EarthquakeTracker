@@ -1,0 +1,139 @@
+/* --------------------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: #1D4350;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px !important;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden !important;
+    height: 100%;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* --------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* --------------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto !important;
+}
+
+section {
+    padding: 50px 0;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
+}
+
+/* --------------------------------------------------- */
+/* HEADER */
+/* --------------------------------------------------- */
+
+header {
+    background-color: rgba(0, 0, 0, 0.09);
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(240, 248, 255, 0.79);
+}
+
+/* --------------------------------------------------- */
+/* SECTION-EARTHQUAKE */
+/* --------------------------------------------------- */
+
+#searchInput {
+    background-image: url(images/magnifying-glass-browser.png);
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    padding-left: 30px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    color: rgba(240, 248, 255, 0.79);
+}
+
+th {
+    text-align: center !important;
+    font-size: 17px;
+    background-color: rgba(47, 118, 85, 0.50);
+}
+
+th, td {
+    padding: 15px !important;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.39);
+}
+
+tr:hover {
+    background-color: rgba(47, 118, 85, 0.35) !important;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(47, 118, 85, 0.21);
+}
+
+.quake-coords {
+   display: none;
+}
+
+/* --------------------------------------------------- */
+/*  BUTTON */
+/* --------------------------------------------------- */
+
+button:active,
+button:visited, 
+button:enabled {
+    outline: none !important;
+}
+
+.btn-center {
+    text-align: center;
+}
+
+/* --------------------------------------------------- */
+/*  FOOTER */
+/* --------------------------------------------------- */
+
+footer {
+    font-weight: normal !important;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    vertical-align: middle !important;
+    color: rgba(240, 248, 255, 0.79);
+}
+
+footer p {
+    margin-bottom: 0;
+}
